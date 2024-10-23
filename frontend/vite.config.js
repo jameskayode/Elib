@@ -28,7 +28,7 @@ export default defineConfig(({ mode }) => {
           server: {
             proxy: {
               '/api': {
-                target: "https://e-library-mern-tan.vercel.app",
+                target: "https://apilib-xi.vercel.app/",
                 changeOrigin: true,
                 rewrite: (path) => path.replace(/^\/api/, '')
               }
