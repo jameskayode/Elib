@@ -25,7 +25,10 @@ function SearchBook() {
         // Fetch books for each category
         await Promise.all(
           categories.map(async (category) => {
-            const response = await axios.get(`/api/books?category=${category}`);
+            const response = await axios.get(
+              `http://localhost:5000/api/books?category=${category}`,
+            )
+
             
             // Filter out books with empty titles or incomplete data
             const filteredBooks = response.data.filter(book => book.title && book.pdfLink);
