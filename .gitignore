@@ -1,0 +1,10 @@
+node_modules
+database.sqlite
+.env
+tsconfig.tsbuildinfo
+.vercel
+.vscode
+dist
+backup
+build
+/**/e-library-78db5-firebase-adminsdk-ppsmp-13a77753a7
